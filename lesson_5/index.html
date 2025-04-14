@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row mb-3">
+        <h1 class="display-4 text-center mb-3">Currency Converter</h1>
+      </div>
+      <div class="row d-block col-6">
+        <div class="form-group">
+          <input
+            id="kgsInput"
+            type="number"
+            class="form-control form-control-lg"
+            placeholder="Enter soms"
+          />
+        </div>
+      </div>
+      <div class="filter container row my-5 justify-content-center">
+        <div class="col-3 filter-option">
+          <label for="usdFilter"
+            ><span class="flag">🇺🇸</span
+            ><span class="flag-text">USD</span></label
+          >
+          <input type="checkbox" id="usdFilter" />
+        </div>
+        <div class="col-3 filter-option">
+          <label for="eurFilter"
+            ><span class="flag">🇪🇺</span
+            ><span class="flag-text">EURO</span></label
+          >
+          <input type="checkbox" id="eurFilter" />
+        </div>
+        <div class="col-3 filter-option">
+          <label for="cnyFilter"
+            ><span class="flag">🇨🇳</span
+            ><span class="flag-text">CNY</span></label
+          >
+          <input type="checkbox" id="cnyFilter" />
+        </div>
+      </div>
+      <div id="output" class="w-50">
+        <div id="usdBlock" class="card card-success mb-2">
+          <div class="card-block">
+            <h2>$</h2>
+            <div id="usdOutput"></div>
+          </div>
+        </div>
+
+        <div id="eurBlock" class="card card-primary mb-2">
+          <div class="card-block">
+            <h2>€</h2>
+            <div id="eurOutput"></div>
+          </div>
+        </div>
+
+        <div id="cnyBlock" class="card card-danger mb-2">
+          <div class="card-block">
+            <h2>¥</h2>
+            <div id="cnyOutput"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
